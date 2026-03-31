@@ -1,0 +1,332 @@
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  border-top: 1px solid #333333;
+  padding: 2rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.topSection {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid #333333;
+}
+
+.heading {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: 0.05em;
+}
+
+.subtext {
+  font-size: 0.875rem;
+  color: #cccccc;
+  margin: 0 0 1.25rem 0;
+}
+
+.subscribeRow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.emailInput {
+  flex: 1;
+  padding: 0.875rem 1rem;
+  border: 1px solid #555555;
+  background: transparent;
+  color: #ffffff;
+  font-size: 0.875rem;
+  outline: none;
+}
+
+.emailInput::placeholder {
+  color: #888888;
+}
+
+.emailInput:focus {
+  border-color: #ffffff;
+}
+
+.subscribeBtn {
+  padding: 0.875rem 2rem;
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.subscribeBtn:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+.contactCurrency {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.callUs {
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: 0.05em;
+}
+
+.contactText {
+  font-size: 0.875rem;
+  margin: 0;
+  line-height: 1.6;
+  color: #cccccc;
+}
+
+.currencyText {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.currencyNote {
+  font-weight: 400;
+  color: #888888;
+  font-size: 0.875rem;
+}
+
+.middleSection {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid #333333;
+}
+
+.linkColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.linkHeading {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+  letter-spacing: 0.05em;
+}
+
+.linkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.linkList li a {
+  color: #cccccc;
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: color 0.2s;
+}
+
+.linkList li a:hover {
+  color: #ffffff;
+}
+
+.socialColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialImg {
+  object-fit: contain;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.socialImg:hover {
+  opacity: 1;
+}
+
+.acceptsHeading {
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.paymentIcons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.paymentImg {
+  height: 24px;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.8;
+}
+
+.bottomSection {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #888888;
+}
+
+/* --- NEW BASE TOGGLE CLASSES (MOBILE DEFAULT) --- */
+.showMobile {
+  display: inline;
+}
+
+.showDesktop {
+  display: none;
+}
+
+.mobileCurrency {
+  display: block;
+}
+
+.desktopCurrency {
+  display: none;
+}
+
+/* ========================================== */
+/* --- TABLET BREAKPOINT (768px) --- */
+/* ========================================== */
+@media (min-width: 768px) {
+  .footer {
+    padding: 3rem 2rem;
+  }
+
+  .subscribeRow {
+    flex-direction: row;
+  }
+
+  .emailInput {
+    min-width: 0;
+  }
+
+  .middleSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+
+  .socialColumn {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .acceptsHeading {
+    margin-top: 0;
+  }
+
+  /* --- NEW TABLET TOGGLES & STYLES --- */
+  .showMobile {
+    display: none;
+  }
+
+  .showDesktop {
+    display: inline;
+  }
+
+  .mobileCurrency {
+    display: none;
+  }
+
+  .desktopCurrency {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .currencyRow {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .flagImg {
+    width: 20px;
+    height: 15px;
+    object-fit: contain;
+  }
+
+  .currencyHoverText {
+    font-size: 0.75rem;
+    color: #888888;
+    margin: 0;
+    line-height: 1.4;
+  }
+}
+
+/* ========================================== */
+/* --- DESKTOP BREAKPOINT (1024px) --- */
+/* ========================================== */
+@media (min-width: 1024px) {
+  .footer {
+    padding: 4rem 2rem;
+  }
+
+  .topSection {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .newsletter {
+    max-width: 400px;
+  }
+
+  .contactCurrency {
+    flex-direction: row;
+    gap: 4rem;
+    text-align: right;
+  }
+
+  .contactCurrency .callUs,
+  .contactCurrency .contactText {
+    text-align: right;
+  }
+
+  .middleSection {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    gap: 2rem;
+  }
+
+  .socialColumn {
+    grid-column: auto;
+    flex-direction: column;
+  }
+
+  /* --- NEW DESKTOP ADJUSTMENTS --- */
+  .desktopCurrency {
+    align-items: flex-end;
+  }
+
+  .currencyHoverText {
+    max-width: 250px;
+    text-align: right;
+  }
+}
