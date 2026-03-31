@@ -143,6 +143,7 @@
     font-weight: 400;
     color: var(--color-text-secondary, #888);
     text-decoration: underline;
+    cursor: pointer;
   }
 
   .recommendedText {

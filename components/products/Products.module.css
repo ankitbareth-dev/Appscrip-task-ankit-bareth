@@ -1,9 +1,16 @@
+.layoutContainer {
+  display: flex;
+  width: 100%;
+}
+
 .grid {
+  flex-grow: 1;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   padding: 1.25rem;
   overflow: hidden;
+  justify-content: start;
 }
 
 @media (min-width: 768px) {
@@ -19,6 +26,21 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     padding: 1.5rem 2rem;
-    overflow: hidden;
+  }
+}
+
+.filterOpen {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .filterOpen {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .filterOpen {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

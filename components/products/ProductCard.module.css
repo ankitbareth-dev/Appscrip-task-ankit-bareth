@@ -65,6 +65,7 @@
 @media (min-width: 1024px) {
   .card {
     aspect-ratio: 300 / 462;
+    max-width: 332px;
   }
 
   .details {
@@ -83,5 +84,10 @@
   .heartIcon {
     width: 1.5rem;
     height: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .card {
+    max-width: 332px;
   }
 }

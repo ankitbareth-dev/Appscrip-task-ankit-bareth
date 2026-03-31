@@ -1,0 +1,32 @@
+.panelContainer {
+  width: 0;
+  min-width: 0;
+  overflow: hidden;
+
+  transition:
+    width 0.3s ease,
+    min-width 0.3s ease;
+}
+
+.isOpen {
+  width: 280px;
+  min-width: 280px;
+}
+
+.panelInner {
+  width: 280px;
+  height: 100%;
+  min-height: 60vh;
+  background-color: var(--color-background, #ffffff);
+  border-right: 1px solid var(--color-border, #e5e5e5);
+}
+
+@media (max-width: 767px) {
+  .isOpen {
+    width: 85vw;
+    min-width: 85vw;
+  }
+  .panelInner {
+    width: 85vw;
+  }
+}
