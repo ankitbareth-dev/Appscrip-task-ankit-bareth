@@ -2,10 +2,10 @@
   width: 0;
   min-width: 0;
   overflow: hidden;
-
   transition:
     width 0.3s ease,
     min-width 0.3s ease;
+  margin-left: 1rem;
 }
 
 .isOpen {
@@ -14,11 +14,119 @@
 }
 
 .panelInner {
-  width: 280px;
+  width: 250px;
   height: 100%;
   min-height: 60vh;
   background-color: var(--color-background, #ffffff);
   border-right: 1px solid var(--color-border, #e5e5e5);
+  overflow-y: auto;
+}
+
+.sectionList {
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionWrapper {
+  border-bottom: 1px solid var(--color-border, #f0f0f0);
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  user-select: none;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.clickable:hover .headerLeft span {
+  color: var(--color-text-secondary);
+}
+
+.allText {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary, #888);
+}
+
+.arrowIcon {
+  transition: transform 0.2s ease;
+  color: var(--color-text-secondary, #888);
+}
+
+.arrowOpen {
+  transform: rotate(180deg);
+}
+
+.accordionContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 0 1.25rem 1.25rem 1.25rem;
+}
+
+.unselectAllBtn {
+  background: none;
+  border: none;
+  text-decoration: underline;
+  font-size: 0.75rem;
+  color: var(--color-text-secondary, #555);
+  cursor: pointer;
+  text-align: left;
+  padding: 0;
+}
+
+.unselectAllBtn:hover {
+  color: var(--color-text-primary);
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+  color: var(--color-text-primary);
+  cursor: pointer;
+}
+
+.checkbox {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--color-border, #ccc);
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.checkbox:checked {
+  background-color: var(--color-text-primary, #000);
+  border-color: var(--color-text-primary, #000);
+}
+
+.checkbox:checked::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 1px;
+  width: 5px;
+  height: 9px;
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
 }
 
 @media (max-width: 767px) {
