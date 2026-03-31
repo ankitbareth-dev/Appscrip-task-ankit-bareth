@@ -3,45 +3,49 @@
   align-items: center;
   justify-content: space-between;
 
-  padding: 1rem 1.25rem;
+  height: 3.75rem;
+  padding: 0 1.25rem;
 
+  border-top: 1px solid var(--color-border, #e5e5e5);
   border-bottom: 1px solid var(--color-border, #e5e5e5);
+  border-left: none;
+  border-right: none;
+
+  position: relative;
 }
 
-.itemCount {
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: var(--color-text-primary);
-  letter-spacing: 0.025em;
-}
-
-.actions {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.btn {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-
-  background-color: transparent;
-  border: 1px solid var(--color-border, #e5e5e5);
-
-  padding: 0.5rem 0.75rem;
-
-  font-family: inherit;
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: var(--color-text-primary);
-
-  cursor: pointer;
-  white-space: nowrap;
-}
-
-.filterDesktop {
+.leftSide {
   display: none;
+}
+
+.filterMobile {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  text-decoration: none;
+}
+
+.divider {
+  color: var(--color-text-secondary, #888);
+  font-weight: 300;
+  font-size: 0.75rem;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.rightSide {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.recommendedText {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
 }
 
 .arrowIcon {
@@ -52,32 +56,46 @@
 
 @media (min-width: 768px) {
   .wrapper {
-    padding: 1.5rem 2rem;
-  }
-
-  .itemCount {
-    font-size: 1rem;
-  }
-
-  .actions {
-    gap: 0.75rem;
-  }
-
-  .btn {
-    font-size: 1rem;
-    padding: 0.75rem 1rem;
+    max-width: 1435px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: static;
   }
 
   .filterMobile {
     display: none;
   }
-  .filterDesktop {
-    display: inline;
-  }
-}
 
-@media (min-width: 1024px) {
-  .wrapper {
-    padding: 1.5rem 6rem;
+  .divider {
+    display: none;
+  }
+
+  .leftSide {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .itemCount {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+  }
+
+  .separator {
+    font-size: 0.875rem;
+    color: var(--color-text-secondary, #888);
+    font-weight: 300;
+  }
+
+  .filterDesktop {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-text-secondary, #888);
+    text-decoration: underline;
+  }
+
+  .recommendedText {
+    font-size: 1rem;
   }
 }
