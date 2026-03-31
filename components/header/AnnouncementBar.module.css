@@ -1,0 +1,35 @@
+.bar {
+  height: auto;
+  min-height: 32px;
+  background-color: var(--color-surface-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+}
+
+.item {
+  display: flex;
+  gap: 0.5rem;
+  color: var(--color-accent);
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
+.hideMobile {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .bar {
+    justify-content: space-evenly;
+    padding: 0.5rem 2rem;
+  }
+
+  .item {
+    font-size: 0.875rem;
+  }
+  .hideMobile {
+    display: flex;
+  }
+}

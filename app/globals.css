@@ -12,7 +12,7 @@ body {
 }
 
 :root {
-  --font-primary: "Inter", "Segoe UI", sans-serif;
+  --font-primary: var(--font-inter), "Segoe UI", sans-serif;
 
   --color-background: #ffffff;
   --color-text-primary: #000000;
@@ -21,7 +21,7 @@ body {
   --color-surface-dark: #000000;
   --color-text-on-dark: #ffffff;
 
-  --color-accent: #dc143c;
+  --color-accent: #f22b53;
 }
 
 body {
