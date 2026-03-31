@@ -1,4 +1,4 @@
-import Image from "next/image";
+import SortDropdown from "./SortDropdown";
 import styles from "./ProductListingHeader.module.css";
 
 export default function ProductListingHeader() {
@@ -14,16 +14,7 @@ export default function ProductListingHeader() {
 
       <div className={styles.divider}>|</div>
 
-      <div className={styles.rightSide}>
-        <span className={styles.recommendedText}>RECOMMENDED</span>
-        <Image
-          className={styles.arrowIcon}
-          src="/arrow-down.svg"
-          alt=""
-          width={16}
-          height={16}
-        />
-      </div>
+      <SortDropdown />
     </div>
   );
 }
