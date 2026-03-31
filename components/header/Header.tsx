@@ -1,14 +1,14 @@
-import AnnouncementBar from "./AnnouncementBar";
-import HeaderNav from "./HeaderNav";
+import AnnouncementSection from "./AnnouncementSection";
+import NavLinkSection from "./NavLinkSection";
 import LogoSection from "./LogoSection";
 import styles from "./Header.module.css";
 
 export default function Header() {
   return (
     <header className={styles.header}>
-      <AnnouncementBar />
+      <AnnouncementSection />
       <LogoSection />
-      <HeaderNav />
+      <NavLinkSection />
     </header>
   );
 }

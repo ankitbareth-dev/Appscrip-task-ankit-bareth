@@ -1,7 +1,7 @@
 import Image from "next/image";
-import styles from "./AnnouncementBar.module.css";
+import styles from "./AnnouncementSection.module.css";
 
-export default function AnnouncementBar() {
+export default function AnnouncementSection() {
   return (
     <div className={styles.bar}>
       <div className={`${styles.item} ${styles.hideMobile}`}>

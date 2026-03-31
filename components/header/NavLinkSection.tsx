@@ -1,6 +1,6 @@
-import styles from "./HeaderNav.module.css";
+import styles from "./NavLinkSection.module.css";
 
-export default function HeaderNav() {
+export default function NavLinkSection() {
   return (
     <nav className={styles.nav}>
       <ul className={styles.list}>
