@@ -111,14 +111,14 @@ export default function Footer() {
           <h3 className={styles.linkHeading}>FOLLOW US</h3>
           <div className={styles.socialIcons}>
             <Image
-              src="/Insta.svg"
+              src="/social-icons/Insta.svg"
               alt="Instagram"
               width={24}
               height={24}
               className={styles.socialImg}
             />
             <Image
-              src="/linkedin.svg"
+              src="/social-icons/linkedin.svg"
               alt="LinkedIn"
               width={24}
               height={24}
@@ -128,42 +128,42 @@ export default function Footer() {
           <h3 className={styles.acceptsHeading}>mettā muse ACCEPTS</h3>
           <div className={styles.paymentIcons}>
             <Image
-              src="/g-pay.svg"
+              src="/payment-icons/g-pay.svg"
               alt="Google Pay"
               width={56}
               height={35}
               className={`${styles.paymentImg} ${styles.bgWhite}`}
             />
             <Image
-              src="/master-card.svg"
+              src="/payment-icons/master-card.svg"
               alt="Mastercard"
               width={56}
               height={35}
               className={`${styles.paymentImg} ${styles.bgWhite}`}
             />
             <Image
-              src="/pay-pal.svg"
+              src="/payment-icons/pay-pal.svg"
               alt="PayPal"
               width={56}
               height={35}
               className={`${styles.paymentImg} ${styles.bgWhite}`}
             />
             <Image
-              src="/amex.svg"
+              src="/payment-icons/amex.svg"
               alt="Amex"
               width={56}
               height={35}
               className={`${styles.paymentImg} ${styles.bgAmex}`}
             />
             <Image
-              src="/apple-pay.svg"
+              src="/payment-icons/apple-pay.svg"
               alt="Apple Pay"
               width={56}
               height={35}
               className={`${styles.paymentImg} ${styles.bgWhite}`}
             />
             <Image
-              src="/Opay.svg"
+              src="/payment-icons/Opay.svg"
               alt="Opay"
               width={56}
               height={35}

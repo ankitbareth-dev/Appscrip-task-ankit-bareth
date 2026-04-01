@@ -28,7 +28,7 @@ export default function ProductCard({ imageUrl, title }: ProductCardProps) {
           </p>
           <Image
             className={styles.heartIcon}
-            src="/heart.svg"
+            src="/logo-section/heart.svg"
             alt="Add to favorites"
             width={20}
             height={20}

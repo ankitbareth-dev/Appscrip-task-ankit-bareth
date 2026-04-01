@@ -9,7 +9,7 @@ export default function LogoSection() {
         <MobileMenu />
         <Image
           className={styles.icon}
-          src="/Logo.svg"
+          src="/logo-section/Logo.svg"
           alt="Logo"
           width={36}
           height={36}
@@ -23,28 +23,28 @@ export default function LogoSection() {
       <div className={styles.right}>
         <Image
           className={styles.icon}
-          src="/search-normal.svg"
+          src="/logo-section/search-normal.svg"
           alt="Search"
           width={24}
           height={24}
         />
         <Image
           className={styles.icon}
-          src="/heart.svg"
+          src="/logo-section/heart.svg"
           alt="Favorites"
           width={24}
           height={24}
         />
         <Image
           className={styles.icon}
-          src="/shopping-bag.svg"
+          src="/logo-section/shopping-bag.svg"
           alt="Cart"
           width={24}
           height={24}
         />
         <Image
           className={`${styles.icon} ${styles.hideMobile}`}
-          src="/profile.svg"
+          src="/logo-section/profile.svg"
           alt="Account"
           width={24}
           height={24}
