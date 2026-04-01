@@ -1,17 +1,12 @@
 import Image from "next/image";
 import styles from "./LogoSection.module.css";
+import MobileMenu from "./MobileMenu";
 
 export default function LogoSection() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.left}>
-        <Image
-          className={`${styles.icon} ${styles.hideTablet}`}
-          src="/menu-icon.svg"
-          alt="Open menu"
-          width={20}
-          height={20}
-        />
+        <MobileMenu />
         <Image
           className={styles.icon}
           src="/Logo.svg"
