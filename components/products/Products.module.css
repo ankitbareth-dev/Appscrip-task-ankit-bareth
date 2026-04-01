@@ -13,6 +13,15 @@
   justify-content: start;
 }
 
+.error {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--color-text-secondary);
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
 @media (min-width: 768px) {
   .grid {
     grid-template-columns: repeat(3, 1fr);
