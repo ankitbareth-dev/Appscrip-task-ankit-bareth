@@ -31,12 +31,10 @@ export default function Footer() {
           <div className={styles.currencyBlock}>
             <h3 className={styles.callUs}>CURRENCY</h3>
 
-            {/* MOBILE VIEW */}
             <p className={`${styles.currencyText} ${styles.mobileCurrency}`}>
               USD <span className={styles.currencyNote}>· EUR · GBP</span>
             </p>
 
-            {/* TABLET & DESKTOP VIEW */}
             <div className={styles.desktopCurrency}>
               <div className={styles.currencyRow}>
                 <Image
@@ -127,50 +125,49 @@ export default function Footer() {
               className={styles.socialImg}
             />
           </div>
-
           <h3 className={styles.acceptsHeading}>mettā muse ACCEPTS</h3>
           <div className={styles.paymentIcons}>
             <Image
               src="/g-pay.svg"
               alt="Google Pay"
-              width={24}
-              height={24}
-              className={styles.paymentImg}
+              width={56}
+              height={35}
+              className={`${styles.paymentImg} ${styles.bgWhite}`}
             />
             <Image
               src="/master-card.svg"
               alt="Mastercard"
-              width={24}
-              height={24}
-              className={styles.paymentImg}
+              width={56}
+              height={35}
+              className={`${styles.paymentImg} ${styles.bgWhite}`}
             />
             <Image
               src="/pay-pal.svg"
               alt="PayPal"
-              width={24}
-              height={24}
-              className={styles.paymentImg}
+              width={56}
+              height={35}
+              className={`${styles.paymentImg} ${styles.bgWhite}`}
             />
             <Image
               src="/amex.svg"
               alt="Amex"
-              width={24}
-              height={24}
-              className={styles.paymentImg}
+              width={56}
+              height={35}
+              className={`${styles.paymentImg} ${styles.bgAmex}`}
             />
             <Image
               src="/apple-pay.svg"
               alt="Apple Pay"
-              width={24}
-              height={24}
-              className={styles.paymentImg}
+              width={56}
+              height={35}
+              className={`${styles.paymentImg} ${styles.bgWhite}`}
             />
             <Image
               src="/Opay.svg"
               alt="Opay"
-              width={24}
-              height={24}
-              className={styles.paymentImg}
+              width={56}
+              height={35}
+              className={`${styles.paymentImg} ${styles.bgOpay}`}
             />
           </div>
         </div>
