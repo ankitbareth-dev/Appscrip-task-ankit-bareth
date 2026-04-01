@@ -44,18 +44,33 @@
   cursor: pointer;
 }
 
-.lang {
-  font-size: 0.875rem;
-  color: var(--color-text-primary);
+.langWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
   cursor: pointer;
+}
+
+.lang {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--color-text-primary);
+  line-height: 1;
+}
+
+.arrow {
+  display: block;
+  color: var(--color-text-primary);
 }
 
 .hideMobile {
   display: none;
 }
+
 .hideMobileBlock {
   display: none;
 }
+
 .hideTablet {
   display: flex;
 }
@@ -81,11 +96,11 @@
 
 @media (min-width: 1024px) {
   .hideMobileBlock {
-    display: block;
+    display: flex;
   }
 
   .wrapper {
-    padding: 0.75rem 6rem;
+    padding: 0.75rem 3rem;
     margin-top: 1rem;
   }
 
@@ -105,5 +120,10 @@
   .left .icon {
     width: 2.25rem;
     height: 2.25rem;
+  }
+
+  .arrow {
+    width: 14px;
+    height: 14px;
   }
 }

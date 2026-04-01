@@ -47,7 +47,6 @@ export default function LogoSection() {
           width={24}
           height={24}
         />
-
         <Image
           className={`${styles.icon} ${styles.hideMobile}`}
           src="/profile.svg"
@@ -55,7 +54,26 @@ export default function LogoSection() {
           width={24}
           height={24}
         />
-        <div className={`${styles.lang} ${styles.hideMobileBlock}`}>ENG</div>
+        <div className={`${styles.langWrapper} ${styles.hideMobileBlock}`}>
+          <span className={styles.lang}>ENG</span>
+          <svg
+            className={styles.arrow}
+            width="12"
+            height="12"
+            viewBox="0 0 12 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path
+              d="M3 4.5L6 7.5L9 4.5"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </div>
       </div>
     </div>
   );
